@@ -97,6 +97,171 @@ Structured Change Management enables:
 
 
 
+# 👥 Role Definitions in Change Management
+
+To better understand how roles interact, consider the following example change:
+
+> **Example Change:** Create `VLAN 666` with a Switched Virtual Interface (SVI) on `Switch A` and replicate `VLAN 666` on `Switch B` to enable routing for a new internal service.
+
+This change affects switching, routing, and potentially service availability if misconfigured.
+
+
+## 📝 Change Requester / Initiator
+
+Responsible for submitting the change request and providing key information about the proposed modification.
+
+### Responsibilities:
+
+* 📌 Define scope and objective of the change
+* 🧾 Provide business or technical justification
+* 🛠 Describe implementation approach
+* ⚠️ Identify potential impact
+
+**Example in this scenario:**
+The requester is a `Network Engineer` who wants to configure a **new VLAN on XYZ location for a new Wireless SSID**. He submits a change ticket stating the need to create `VLAN 666` with an SVI on `Switch A`, assign an IP address for routing, and replicate `VLAN 666` on `Switch B` to maintain Layer 2 consistency. He is also part of the Network Infraestructure `Technical Team`.
+
+
+## 🏢 Technical Approver
+
+Reviews the technical validity of the proposed change.
+
+### Responsibilities:
+
+* 🔎 Validate technical design
+* 🔙 Confirm rollback plan
+* 🛡 Ensure mitigation steps are defined
+
+**Example in this scenario:**
+The Technical Approver verifies that removing `VLAN 666` from both `Switch A` and `Switch B` can be safely executed if the deployment fails. He is also part of the Network Infraestructure `Technical Team`.
+
+## 👨‍💻 Technical Teams / Implementation Teams
+
+Responsible for planning, building, testing, and executing approved changes.
+
+### Responsibilities:
+
+* 🧩 Develop technical implementation plan
+* 🧪 Perform system and unit testing
+* 🚀 Execute the change in production
+* 🔄 Perform post-implementation validation
+* 🧠 Conduct root cause analysis if needed
+
+**Example in this scenario:**
+The technical team configures `VLAN 666`, creates the SVI on `Switch A`, verifies trunk propagation to `Switch B`, validates routing tables, and confirms end-to-end connectivity. In this example the Network Infraestructure `Technical Team` is composed by 10 Network Engineers, including the requester and the technical approver for this specific change request. 
+
+
+
+## 🏛 IT Service Owner
+
+Accountable for the service affected by the change.
+
+### Responsibilities:
+
+* 🔎 Assess impact to service performance and availability
+* 📊 Prioritize the change request
+* ✅ Approve or reject the change
+* 🎯 Ensure alignment with service-level objectives
+
+**Example in this scenario:**
+The IT Service Owner evaluates whether creating `VLAN 666` and enabling routing on `Switch A` could impact existing services, trunk configurations, or routing policies before approving.
+
+
+## 💼 Business Owner
+
+Represents business interests and operational impact.
+
+### Responsibilities:
+
+* 📈 Evaluate business risk and impact
+* 🗳 Participate in approval decisions
+* 🧪 Support User Acceptance Testing (UAT)
+* ✔ Validate the change meets business needs
+
+**Example in this scenario:**
+The Business Owner confirms that the new service requiring `VLAN 666` is aligned with operational requirements and verifies connectivity after deployment.
+
+
+
+## 🎯 Change Manager
+
+Oversees the Change Management process end-to-end.
+
+### Responsibilities:
+
+* 📚 Maintain policies and governance standards
+* 🔍 Ensure risk assessment is completed
+* 📅 Coordinate approvals and scheduling
+* 📏 Monitor compliance with change procedures
+* 🧑‍⚖️ Chair Change Advisory Board (CAB) meetings
+
+**Example in this scenario:**
+The Change Manager ensures that the configuration of `VLAN 666` on both `Switch A` and `Switch B` includes a rollback plan and is scheduled during an approved maintenance window.
+
+
+
+## 📦 Deployment Coordinator (Optional Role)
+
+Coordinates release or deployment activities.
+
+### Responsibilities:
+
+* 📅 Schedule deployment window
+* 🛎 Ensure environment readiness
+* 🔁 Confirm execution sequence
+* 📣 Communicate status updates
+
+**Example in this scenario:**
+The Deployment Coordinator confirms that both `Switch A` and `Switch B` are available during the maintenance window and not involved in other concurrent changes.
+
+
+
+## 🧑‍⚖️ Change Advisory Board (CAB)
+
+A governance body composed of technical and business representatives.
+
+### Responsibilities:
+
+* 📋 Review higher-risk or major changes
+* 🧠 Provide recommendations
+* 🗓 Advise on scheduling conflicts
+* 👁 Ensure organizational risk visibility
+
+**Example in this scenario:**
+If adding `VLAN 666` introduces routing policy updates or impacts multiple network segments, the CAB reviews the change before approval.
+
+
+
+
+
+## 📌 Leadership / Local Governance Roles
+
+In some organizations, enterprise-level or regional leaders review:
+
+* 🔴 High-risk changes
+* ⚠️ Emergency changes
+* ⏱ Expedited changes
+
+**Example in this scenario:**
+If `VLAN 666` supports a critical production environment, leadership may require additional oversight before implementation.
+
+
+
+# 🔄 Why Role Clarity Matters
+
+Clearly defined roles:
+
+* 🧭 Reduce ambiguity
+* 🚫 Prevent unauthorized implementation
+* 🏗 Improve accountability
+* 🛡 Strengthen governance
+* 📈 Increase change success rate
+
+Strong role definition is a foundational element of mature IT Service Management (ITSM).
+
+
+
+
+
 
 # 📚🗂️🎥 Resources
 
