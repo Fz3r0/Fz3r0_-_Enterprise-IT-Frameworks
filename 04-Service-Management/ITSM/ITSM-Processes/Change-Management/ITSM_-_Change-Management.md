@@ -22,8 +22,79 @@
 
 # 🛠 IT Service Managemet (ITSM): `Change Management`
 
+> A structured approach to controlling modifications in enterprise Information Technology (IT) environments in order to reduce risk and increase service reliability.
 
+## 📘 Introduction
 
+Change Management is a core process within **IT Service Management (ITSM)**.
+
+In enterprise Information Technology (IT) environments, change is constant. Infrastructure evolves, applications are updated, configurations are modified, and services are improved.
+
+However, **uncontrolled changes are one of the primary causes of service disruption.**
+
+Change Management exists to ensure that changes are:
+
+* 📋 Properly documented
+* 🔍 Risk-assessed
+* ✅ Authorized before implementation
+* 📅 Scheduled in a controlled manner
+* 🔄 Reviewed after execution
+
+When structured correctly, Change Management reduces incidents and increases operational stability.
+
+## 🧩 What Is a Change?
+
+A **Change** is:
+
+- **The addition, modification, or removal of any authorized, planned, or supported service or service component that may affect Information Technology (IT) services.**
+
+_If it can impact availability, performance, security, or reliability, it qualifies as a change._
+
+## 🎯 What Is Change Management?
+
+**Change Management** is the practice of maximizing the number of successful service and product changes by:
+
+- 🔍 Ensuring risks are properly assessed
+- ✅ Authorizing changes before implementation
+- 📅 Managing change schedules
+- 🤝 Coordinating resources
+- ⚠️ Reducing unintended service disruption
+
+_The objective is not to prevent change, it is to enable change safely._
+
+## 🖥 Practical Examples of Changes
+
+Changes vary in urgency and impact. Examples include:
+
+- 🟢 **Standard Change** :: (Pre-authorized, low-risk, repeatable, and does not require approval each time it is executed) : e.g.: Adding a pre-approved Virtual Local Area Network (VLAN) tag to an access interface using a documented procedure 
+- 🚦 **Normal Change** :: (Requires risk assessment and formal approval; may be low, medium, or high impact and is not pre-approved) : e.g.: Creating a new VLAN with a Switched Virtual Interface (SVI) and deploying it across multiple switches.
+- ⚠️ **Emergency Change** :: (Implemented urgently to resolve a major incident or prevent significant business impact) : e.g.: Reverting a faulty routing configuration to restore service during a production outage.
+- ⏱️ **Expedited Change** :: (time-sensitive but not necessarily tied to an active outage; follows an accelerated review process) : e.g.: Deploying a security patch within a shortened approval window due to a vulnerability alert.
+
+The complexity of the task does not define whether it is a change. The potential impact does.
+
+## 🔍 Why Change Management Matters
+
+Uncontrolled changes increase:
+
+* ⚠️ Service outages
+* 📉 Business disruption
+* 🛡 Security vulnerabilities
+* 📊 Compliance risk
+
+Structured Change Management enables:
+
+* 📐 Defined processes
+* 🏛 Governance and oversight
+* 🤖 Approval workflows
+* 👁 Process visibility
+* 📊 Reduced incident rates
+
+## 💡 Important
+
+- **Planned and properly controlled changes reduce the number of incidents.**
+
+_Change Management transforms reactive operations into controlled evolution._
 
 
 
