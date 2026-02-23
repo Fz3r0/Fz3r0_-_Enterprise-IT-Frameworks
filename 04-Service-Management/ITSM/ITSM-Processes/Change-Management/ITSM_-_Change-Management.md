@@ -50,7 +50,7 @@ A **Change** is:
 
 _If it can impact availability, performance, security, or reliability, it qualifies as a change._
 
-- **💡 `IMPORTANT!!!` :: **Planned and properly controlled changes reduce the number of incidents.**
+- 💡 **`IMPORTANT!!!`** :: **Planned and properly controlled changes reduce the number of incidents.**
 
 _Change Management transforms reactive operations into controlled evolution._
 
