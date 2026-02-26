@@ -105,6 +105,18 @@ To better understand how roles interact, consider the following example change:
 
 This change affects switching, routing, and potentially service availability if misconfigured.
 
+Clearly defined roles:
+
+* 🧭 Reduce ambiguity
+* 🚫 Prevent unauthorized implementation
+* 🏗 Improve accountability
+* 🛡 Strengthen governance
+* 📈 Increase change success rate
+
+Strong role definition is a foundational element of mature IT Service Management (ITSM).
+
+
+
 
 ## 📝 Change Requester / Initiator
 
@@ -118,7 +130,7 @@ Responsible for submitting the change request and providing key information abou
 * ⚠️ Identify potential impact
 
 **Example in this scenario:**
-The requester is a `Network Engineer` who wants to configure a **new VLAN on XYZ location for a new Wireless SSID**. He submits a change ticket stating the need to create `VLAN 666` with an SVI on `Switch A`, assign an IP address for routing, and replicate `VLAN 666` on `Switch B` to maintain Layer 2 consistency. He is also part of the Network Infraestructure `Technical Team`.
+The requester is a `Network Engineer` who wants to configure a **new VLAN on XYZ location for a new Wireless SSID**. He submits a change ticket stating the need to create `VLAN 666` with an SVI on `Switch A`, assign an IP address for routing, and replicate `VLAN 666` on `Switch B` to maintain Layer 2 consistency. He is also part of the Network Infraestructure `Technical Team` (but he can't be his own tech approver, even if he is part por the Technical Team).
 
 
 ## 🏢 Technical Approver
@@ -147,7 +159,7 @@ Responsible for planning, building, testing, and executing approved changes.
 * 🧠 Conduct root cause analysis if needed
 
 **Example in this scenario:**
-The technical team configures `VLAN 666`, creates the SVI on `Switch A`, verifies trunk propagation to `Switch B`, validates routing tables, and confirms end-to-end connectivity. In this example the Network Infraestructure `Technical Team` is composed by 10 Network Engineers, including the requester and the technical approver for this specific change request. 
+The technical team configures `VLAN 666`, creates the SVI on `Switch A`, verifies trunk propagation to `Switch B`, validates routing tables, and confirms end-to-end connectivity. In this example the Network Infraestructure `Technical Team` is composed by 10 Network Engineers, including the requester and the technical approver for this specific change request, but only 1 engineer will push this configuration (in this case, it will be the change requester)
 
 
 
@@ -227,7 +239,7 @@ A governance body composed of technical and business representatives.
 * 👁 Ensure organizational risk visibility
 
 **Example in this scenario:**
-If adding `VLAN 666` introduces routing policy updates or impacts multiple network segments, the CAB reviews the change before approval.
+If adding `VLAN 666` introduces routing policy updates or impacts multiple network segments, the CAB reviews the change before approval. They can organize a meeting with the requester and implementation teams for better understanding and validation of the change. 
 
 
 
@@ -244,19 +256,6 @@ In some organizations, enterprise-level or regional leaders review:
 **Example in this scenario:**
 If `VLAN 666` supports a critical production environment, leadership may require additional oversight before implementation.
 
-
-
-# 🔄 Why Role Clarity Matters
-
-Clearly defined roles:
-
-* 🧭 Reduce ambiguity
-* 🚫 Prevent unauthorized implementation
-* 🏗 Improve accountability
-* 🛡 Strengthen governance
-* 📈 Increase change success rate
-
-Strong role definition is a foundational element of mature IT Service Management (ITSM).
 
 
 
