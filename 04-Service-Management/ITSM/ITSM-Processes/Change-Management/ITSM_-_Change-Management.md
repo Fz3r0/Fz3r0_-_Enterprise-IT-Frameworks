@@ -262,6 +262,145 @@ If `VLAN 666` supports a critical production environment, leadership may require
 
 
 
+
+
+
+
+
+
+
+
+
+# ⚖️ Risk Assessment in Change Management
+
+> Risk Assessment evaluates the potential exposure of a proposed change before it is approved for implementation. Risk Assessment introduces discipline, transparency, and accountability into the change decision-making process. It ensures that change is not only controlled, but intelligently controlled.
+
+In Change Management, decisions should not be based solely on urgency. They must be supported by structured evaluation of impact and probability.
+
+A mature **IT Service Management (ITSM)** process evaluates risk using three core dimensions:
+
+* 📏 Scale
+* 🎲 Likelihood
+* 💥 Consequence
+
+Together, these determine the overall risk level of a change.
+
+To illustrate, we will use the same example as last section:
+
+> **Example Change:** Create `VLAN 520` with a Switched Virtual Interface (SVI) on `Switch A` and replicate `VLAN 520` on `Switch B` to support a new internal service.
+
+
+## 📏 Scale
+
+Scale measures how broadly the change affects the organization.
+
+It evaluates the scope of impact based on the number of users, locations, or business services involved.
+
+### Categories:
+
+* 🏢 **Enterprise** :: The change affects multiple locations, critical shared services, or organization-wide systems.
+
+* 👥 **Group** :: The change impacts several users, a department, or a defined business unit.
+
+* 👤 **Individual** :: The change affects a single service instance, location, or limited user base.
+
+### Example (Our Scenario)
+
+* 👤 **Individual**
+  Deploy `VLAN 520` with an SVI only in a single office, for a new local service that is not yet in production, such as onboarding a new server segment or a new security network in that site only.
+  Example: Configure `VLAN 520` and its SVI on `Switch A` and replicate it on `Switch B` only for `Site X`.
+
+* 👥 **Group**
+  Roll out `VLAN 520` across a defined set of locations within a region, such as 4 offices out of 50, where the same change must be implemented consistently across multiple sites.
+  Example: Deploy `VLAN 520` and routing updates across `Site X`, `Site Y`, `Site Z`, and `Site W`.
+
+* 🏢 **Enterprise**
+  Introduce a new standard network segment that must exist everywhere, requiring consistent deployment across all branches and data centers.
+  Example: Implement `VLAN 520` (or a new enterprise subnet standard) across all sites, including creating SVIs, updating trunks, routing policies, and validation procedures globally.
+
+
+
+## 🎲 Likelihood
+
+Likelihood evaluates the probability that the change may fail or cause service disruption.
+
+This dimension considers:
+
+* 🔎 Previous implementation history
+* 🧪 Availability of pre-implementation testing
+* 🔄 Existence of rollback procedures
+* 🧩 Technical complexity
+* 📚 Familiarity of the technical team with the change
+
+### Categories:
+
+* 🔴 **Very Likely** :: The change cannot undergo proper testing, has not been implemented before, or introduces unknown behavior.
+
+* 🟠 **Likely** :: The change will be tested, but similar implementations have previously resulted in disruption.
+
+* 🟢 **Unlikely** :: The change follows a validated and repeatable procedure with adequate testing and rollback preparation.
+
+### Example (Our Scenario)
+
+* 🟢 If creating `VLAN 520` and its SVI has been performed many times in similar environments, likelihood may be **Unlikely**.
+
+* 🟠 If modifying trunk configurations between `Switch A` and `Switch B` introduces new routing policies never tested before, likelihood may be **Likely**.
+
+* 🔴 If the change involves untested interactions with production routing tables, likelihood could be considered **Very Likely**.
+
+
+## 💥 Consequence
+
+Consequence represents the level of business impact that would occur if the change fails, even after executing a rollback plan.
+
+It reflects the highest-priority incident that could result from unsuccessful implementation.
+
+### Categories:
+
+* 🔴 **P1 – Critical Business Interruption** :: Severe outage affecting core production systems, multiple business units, or essential operations.
+
+* 🟠 **P2 – Significant Service Impact** :: Major degradation affecting a department, critical workflow, or large user group.
+
+* 🟡 **P3 – Moderate Operational Impact** :: Limited disruption affecting a group of users or non-core service, with workarounds available.
+
+* 🟢 **P4 – Minor or Isolated Impact** :: Localized issue affecting a single user, lab system, or low-priority service.
+
+### Example (Our Scenario)
+
+- If misconfiguring `VLAN 520` causes routing instability across multiple segments connected through `Switch A`, the consequence may be **P1**.
+
+- If only a department loses access due to improper trunk propagation on `Switch B`, it may be classified as **P2 or P3**.
+
+- If the change impacts only a test workstation connected to `Switch B`, the consequence would likely be **P4**.
+
+
+
+## 🧮 Overall Risk Determination
+
+Risk is typically calculated by combining:
+
+**Scale × Likelihood × Consequence**
+
+This structured evaluation allows organizations to:
+
+* 📊 Apply objective risk scoring
+* 🛡 Improve approval decisions
+* 📅 Schedule high-risk changes carefully
+* 👁 Provide visibility to governance bodies
+
+Higher combined scores require increased oversight and potentially additional approvals.
+
+### 📌 Important Considerations
+
+* 🔵 Risk Assessment is typically required for **Normal Changes**.
+* ⏱ It may also apply to **Expedited Changes**, depending on urgency and impact.
+* 🟢 **Standard Changes** are pre-approved and generally do not require full risk evaluation.
+* ⚠️ **Emergency Changes** may undergo risk review retrospectively after implementation.
+
+
+
+
+
 # 📚🗂️🎥 Resources
 
 - 
