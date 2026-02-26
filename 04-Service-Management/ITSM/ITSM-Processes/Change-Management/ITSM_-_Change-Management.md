@@ -401,6 +401,87 @@ Higher combined scores require increased oversight and potentially additional ap
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 🟦 Normal Change
+
+A **Normal Change** is any change that is not classified as Standard, Emergency, or Expedited.
+
+Normal Changes require formal review and approval prior to implementation. The level of approval depends on the assessed risk (low, medium, or high).
+
+
+## 🔎 Approval Model 
+
+Depending on organizational governance structure, Normal Changes may require:
+
+* 🛠 Technical approval
+* 🏛 Service Owner approval
+* 🧑‍⚖️ Change Advisory Board (CAB) review
+* 🏢 Leadership approval for enterprise-level or high-risk changes
+
+Higher-risk changes typically require broader visibility and additional oversight.
+
+
+## 🗓 Review and Scheduling
+
+Normal Changes impacting production environments are typically reviewed before deployment.
+
+Organizations commonly establish:
+
+* A recurring CAB review cycle (e.g., weekly or bi-weekly)
+* A defined lead time requirement before implementation
+
+Lead time requirements may vary based on maturity and risk posture, but commonly range between:
+
+* ⏳ 24 to 72 hours for moderate-risk changes
+* 📅 Longer notice periods for high-impact or enterprise-wide changes
+
+This structured scheduling approach ensures:
+
+* Adequate risk evaluation
+* Resource coordination
+* Conflict avoidance with other planned activities
+
+### 📌 Note
+
+Production changes usually require CAB visibility. Changes affecting non-production environments (e.g., lab or development) may follow a simplified approval path, depending on governance policies.
+
+## 🧾 Key Attributes of a Normal Change
+
+* 🔁 One-time or non-preapproved request
+* 🔍 Risk assessment is required
+* 🛠 Technical validation is mandatory
+* 🧑‍⚖️ Additional approvals depend on risk level
+* 📅 Advance scheduling and lead time are required
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 📚🗂️🎥 Resources
 
 - 
