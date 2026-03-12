@@ -1,0 +1,134 @@
+# 🔄 ⚠️ 🚨 IT Service Managemet (ITSM): `Incident Management`
+
+![My Video](https://user-images.githubusercontent.com/94720207/165892585-b830998d-d7c5-43b4-a3ad-f71a07b9077e.gif)
+
+### 🐦 Twitter  : [@fz3r0_OPs](https://twitter.com/Fz3r0_OPs)
+### 🐱 Github  : [Fz3r0](https://github.com/fz3r0) 
+
+---
+ 
+#### Keywords: `ITSM` `IT Service Management` `IT Governance` `Service Lifecycle` `Incident Management` `Change Management` `Problem Management` `Release Management` `Configuration Management` `Service Request Management` `Risk Management` `Operational Control` `Process Standardization` `Service Reliability` `Continuous Improvement` `Service Strategy` `Service Operations` `ITIL` `ISO 20000` `Enterprise IT`
+
+---
+
+<br>
+
+# 📄 `Index`
+
+[**🛠 IT Service Managemet (ITSM): `Change Management`**]()
+- [Info  Covered]()
+
+
+
+# 🔄 ⚠️ 🚨 IT Service Managemet (ITSM): `Incident Management`
+
+Incident Management is one of the core processes of **IT Service Management (ITSM)**.
+Its purpose is to ensure that disruptions to IT services are handled quickly and efficiently in order to minimize business impact.
+
+An **incident** is defined as:
+
+> An **unplanned interruption**, degradation, or potential disruption to an IT service.
+
+Examples include:
+
+* A user unable to connect to Wi-Fi
+* An application becoming unavailable
+* Network connectivity loss in a branch office
+* Authentication or login failures
+
+The primary objective of Incident Management is:
+
+> **Restore normal service operation as quickly as possible while minimizing impact to business operations.**
+
+This process ensures that service availability and service quality remain at acceptable levels for both **internal users and external customers**.
+
+- **IMPORTANT:** Incident Management is **reactive by nature**, meaning it focuses on **restoring services after a disruption occurs**.
+
+However, the information collected during incidents plays an important role in supporting:
+
+* 🧠 **Problem Management** (Root Cause Analysis)
+* 🔁 **Change Management** (preventing future incidents)
+
+Together, these processes help organizations move from **reactive operations to proactive service improvement**.
+
+
+
+## 🎯 Incident Management Goals
+
+The Incident Management process focuses on five operational principles:
+
+| Phase          | Objective                                                                                             |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| 🤝 **Unify**   | Simplify and coordinate communication across teams and stakeholders during incidents.                 |
+| 🚨 **Respond** | Detect and escalate critical issues quickly to the appropriate technical teams.                       |
+| ⚡ **Resolve**  | Restore service as quickly as possible using the right tools, processes, and information.             |
+| 📚 **Learn**   | Capture relevant information during incidents to improve future troubleshooting and problem analysis. |
+| 📊 **Measure** | Use metrics and KPIs to evaluate performance, efficiency, and service quality.                        |
+
+
+
+## 🎯 What Incident Management Aims to Achieve
+
+Incident Management supports broader ITSM objectives across several operational dimensions:
+
+| Focus Area          | Objective                                                                                      |
+| ------------------- | ---------------------------------------------------------------------------------------------- |
+| 👤 **Customer 360** | Reduce incident response time and improve communication with users during service disruptions. |
+| 👥 **People**       | Empower IT teams with processes, tools, and best practices for efficient incident handling.    |
+| ⚙️ **Efficiency**   | Prioritize and automate processes to reduce service downtime.                                  |
+| 🔄 **Agility**      | Enable the organization to respond quickly to unexpected service disruptions.                  |
+| 📈 **Scale**        | Maintain consistent operational performance as the organization grows.                         |
+| 🚀 **Growth**       | Improve processes, analytics, automation, and visibility across IT operations.                 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 📚🗂️🎥 Resources
+
+- 
+
+
+  
+---
+
+<span align="center"> <p align="center"> ![giphy](https://user-images.githubusercontent.com/94720207/166587250-292d9a9f-e590-4c25-a678-d457e2268e85.gif) </p> </span> 
+
+
+
+&nbsp;
+
+<span align="center"> <p align="center"> _I hope this information was useful for someone_ </p> </span> 
+<span align="center"> <p align="center"> _and please, don't forget to enjoy your days..._ </p> </span> 
+<span align="center"> <p align="center"> _...It is getting dark... so dark..._ </p> </span> 
+
+&nbsp;
+
+<span align="center"> <p align="center"> _In the mist of the night you could see me come, where shadows move and Demons lie..._ </p> </span> 
+<span align="center"> <p align="center"> _I am [Fz3r0 💀](https://github.com/Fz3r0/) and the Sun no longer rises..._ </p> </span> 
+
+---
+
+
+
+
+
+
+---
+
+> ![hecho en mexico 5](https://user-images.githubusercontent.com/94720207/166068790-fa1f243d-2db9-4810-a6e4-eb3c4ad23700.png)
+>
+> _- Hecho en México - by [Fz3r0 💀](https://github.com/Fz3r0/)_  
+>
+> _"In the mist of the night you could see me come, where shadows move and Demons lie..."_ 
+
