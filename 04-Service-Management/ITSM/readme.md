@@ -91,4 +91,3 @@ Strategy → Governance → Process → Execution → Continuous Improvement
 It provides the structural foundation for scalable enterprise Information Technology (IT) operations.
 
 
-Tú decides el siguiente movimiento 😎
