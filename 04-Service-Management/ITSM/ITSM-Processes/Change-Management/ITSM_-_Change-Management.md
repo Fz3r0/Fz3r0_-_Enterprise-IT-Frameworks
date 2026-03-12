@@ -752,67 +752,154 @@ Deploying a configuration update to mitigate a newly discovered vulnerability.
 
 
 
+# 🧭 Change Types in Change Management
+
+> Not all changes carry the same level of risk, urgency, or operational complexity.
+>
+> In mature **IT Service Management (ITSM)** environments, changes are categorized to determine the **level of control, approval, and process rigor required before implementation**.
+
+Classifying changes helps organizations:
+
+* 📊 Apply the correct governance model
+* ⚠️ Reduce unnecessary risk exposure
+* ⚡ Enable faster execution when appropriate
+* 🧭 Ensure consistency in operational processes
+
+Most ITSM frameworks define **four primary change categories**.
+
+* 🟢 **Standard Change**
+* 🔵 **Normal Change**
+* 🟠 **Expedited Change**
+* 🔴 **Emergency Change**
 
 
-# 🟦 Normal Change
+Each category follows a **different level of process control and approval workflow**.
 
-A **Normal Change** is any change that is not classified as Standard, Emergency, or Expedited.
+## 🟢 Standard Change
 
-Normal Changes require formal review and approval prior to implementation. The level of approval depends on the assessed risk (low, medium, or high).
+A **Standard Change** is a **pre-authorized, low-risk, and repeatable modification** that follows a documented and validated procedure.
 
+These changes are performed frequently and have **minimal potential to disrupt services** when executed correctly.
 
-## 🔎 Approval Model 
+Because the procedure is already validated, Standard Changes **do not require full approval review each time they are executed**.
 
-Depending on organizational governance structure, Normal Changes may require:
+### Typical Characteristics
 
-* 🛠 Technical approval
-* 🏛 Service Owner approval
-* 🧑‍⚖️ Change Advisory Board (CAB) review
-* 🏢 Leadership approval for enterprise-level or high-risk changes
+* 🔁 Performed regularly
+* ⚙️ Follows a predefined procedure
+* 🛡 Minimal operational risk
+* 📋 Pre-approved by governance process
+* 🧩 Usually executed by a single technical team
 
-Higher-risk changes typically require broader visibility and additional oversight.
+#### Example (Networking Scenario)
 
+A Network Engineer may perform a Standard Change to:
 
-## 🗓 Review and Scheduling
+* Add a **pre-approved VLAN tag to an access port**
+* Enable an interface already defined in a deployment template
+* Apply a routine configuration adjustment following an established procedure
 
-Normal Changes impacting production environments are typically reviewed before deployment.
-
-Organizations commonly establish:
-
-* A recurring CAB review cycle (e.g., weekly or bi-weekly)
-* A defined lead time requirement before implementation
-
-Lead time requirements may vary based on maturity and risk posture, but commonly range between:
-
-* ⏳ 24 to 72 hours for moderate-risk changes
-* 📅 Longer notice periods for high-impact or enterprise-wide changes
-
-This structured scheduling approach ensures:
-
-* Adequate risk evaluation
-* Resource coordination
-* Conflict avoidance with other planned activities
-
-### 📌 Note
-
-Production changes usually require CAB visibility. Changes affecting non-production environments (e.g., lab or development) may follow a simplified approval path, depending on governance policies.
-
-## 🧾 Key Attributes of a Normal Change
-
-* 🔁 One-time or non-preapproved request
-* 🔍 Risk assessment is required
-* 🛠 Technical validation is mandatory
-* 🧑‍⚖️ Additional approvals depend on risk level
-* 📅 Advance scheduling and lead time are required
+Because the implementation process is already validated, this type of change **does not require CAB review for each execution**.
 
 
+## 🔵 Normal Change
+
+A **Normal Change** is a planned modification that **requires evaluation and formal approval before implementation**.
+
+Unlike Standard Changes, these modifications may introduce **moderate operational impact or complexity**, requiring structured governance before execution.
+
+Normal Changes follow the **complete Change Management lifecycle**.
+
+### Typical Characteristics
+
+* 🔍 Requires risk evaluation
+* 📋 Requires formal approval
+* 📅 Scheduled during a maintenance window
+* 🧠 Often reviewed by technical leadership or governance bodies
+* 📊 May involve coordination between multiple teams
+
+#### Example (Networking Scenario)
+
+A Network Engineer may request a Normal Change to:
+
+* Create `VLAN 520`
+* Configure a **Switched Virtual Interface (SVI)** on `Switch A`
+* Extend the VLAN across trunk links to `Switch B`
+* Update routing policies to support a new internal service
+
+Because this modification affects **network segmentation and routing**, the change must undergo proper **risk evaluation and approval before deployment**.
 
 
+## 🟠 Expedited Change
+
+An **Expedited Change** is a **time-sensitive modification that must be implemented quickly but does not qualify as an emergency incident response**.
+
+These changes are typically required when waiting for the next scheduled review or CAB meeting would introduce unnecessary risk or operational delay.
+
+The approval process is **accelerated but still controlled**.
+
+### Typical Characteristics
+
+* ⏱ Time-sensitive implementation
+* ⚠️ Not associated with an active service outage
+* 👥 Requires rapid but documented approval
+* 📋 Often approved by designated leadership or service owners
+* 🔎 Reviewed after execution for compliance
+
+#### Example (Networking Scenario)
+
+An Expedited Change may involve:
+
+* Applying a **configuration adjustment to mitigate a newly discovered vulnerability**
+* Deploying a routing policy update needed before the next CAB meeting
+* Implementing a configuration change required to support a critical customer onboarding
+
+Although urgent, the change still follows **controlled documentation and validation procedures**.
 
 
+## 🔴 Emergency Change
+
+An **Emergency Change** is executed to **resolve a critical incident or prevent immediate service disruption**.
+
+These changes bypass portions of the normal approval process because **service restoration takes priority over procedural control**.
+
+Governance review typically occurs **after implementation**.
+
+### Typical Characteristics
+
+* 🚨 Triggered by an active incident
+* ⚡ Implemented immediately to restore service
+* 📉 Focused on minimizing operational impact
+* 📋 Documentation and approvals may occur after execution
+* 🔍 Often followed by Root Cause Analysis (RCA)
+
+#### Example (Networking Scenario)
+
+An Emergency Change may involve:
+
+* Rolling back a faulty routing configuration causing network outage
+* Disabling a malfunctioning interface affecting production connectivity
+* Reverting a firewall rule that unexpectedly blocked critical traffic
+
+The priority is **restoring service stability as quickly as possible**.
 
 
+## ⚖️ Choosing the Correct Change Type
 
+Selecting the correct category is essential for applying the **appropriate level of governance and operational control**.
+
+| Change Type    | Risk Level                | Approval Requirement       | Typical Use Case                      |
+| -------------- | ------------------------- | -------------------------- | ------------------------------------- |
+| 🟢 Standard    | Low                       | Pre-approved               | Routine operational tasks             |
+| 🔵 Normal      | Moderate                  | Formal approval required   | Planned infrastructure updates        |
+| 🟠 Expedited   | Moderate / Time-sensitive | Accelerated approval       | Urgent but non-incident modifications |
+| 🔴 Emergency   | High / Incident-driven    | Post-implementation review | Immediate service restoration         |
+
+Misclassifying a change can introduce unnecessary risk or delay.
+
+The goal of Change Management is not to slow technical work.
+
+It is to ensure that **infrastructure evolves in a controlled, traceable, and reliable manner**.
 
 
 
