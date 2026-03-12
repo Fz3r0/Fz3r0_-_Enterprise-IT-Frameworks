@@ -408,6 +408,328 @@ Higher combined scores require increased oversight and potentially additional ap
 
 
 
+# 🔁 Change Lifecycle
+
+> The **Change Lifecycle** defines the structured sequence of stages that a change request follows from initial proposal to final closure.
+>
+> This lifecycle ensures that modifications to Information Technology (IT) environments are **evaluated, authorized, implemented, and reviewed in a controlled and traceable manner**.
+
+A well-defined lifecycle provides:
+
+* 🧭 Clear governance and accountability
+* ⚠️ Risk mitigation before implementation
+* 📅 Coordinated scheduling and communication
+* 🔍 Validation of technical and business outcomes
+* 📚 Documentation for auditing and continuous improvement
+
+The lifecycle transforms **individual technical actions into an organized operational process**. The Change Lifecycle exists to **balance innovation with operational stability**.
+
+Without structured control:
+
+* Configuration errors propagate quickly
+* Service disruptions increase
+* Root cause becomes difficult to trace
+
+A mature lifecycle ensures that **every change is intentional, traceable, and recoverable**.
+
+Change Management does not slow progress. It **enables safe evolution of complex IT environments**.
+
+## 🧩 Key Stages of the Change Lifecycle
+
+A typical **IT Service Management (ITSM)** change lifecycle includes **seven structured stages**:
+
+1. 📌 **Request for Change (RFC)**
+2. 🔍 **Assessment & Evaluation**
+3. ✅ **Approval**
+4. 📅 **Planning & Scheduling**
+5. 🛠 **Implementation**
+6. 🔎 **Review & Validation**
+7. 📦 **Closure**
+
+Each stage introduces a layer of control designed to **reduce service disruption while enabling infrastructure evolution**.
+
+### 📌 1️⃣ Request for Change (RFC)
+
+The lifecycle begins when a **Change Request** is formally submitted.
+
+This stage captures the initial description of the proposed modification and its intended objective.
+
+### Typical Information Included
+
+* 📋 Change title and description
+* 🎯 Business or technical justification
+* 🧩 Affected services or infrastructure components
+* 👤 Change requester
+* ⚠️ Initial impact estimation
+
+#### Example (Our Scenario)
+
+A **Network Engineer** submits a request to:
+
+* Create `VLAN 520`
+* Configure a **Switched Virtual Interface (SVI)** on `Switch A`
+* Replicate `VLAN 520` across trunk links to `Switch B`
+
+The objective is to enable routing for a new internal service segment.
+
+### 🔍 2️⃣ Assessment & Evaluation
+
+During this stage, the proposed change is **analyzed to determine feasibility, risk, and potential impact**.
+
+The evaluation typically includes:
+
+* 📏 Risk assessment (Scale, Likelihood, Consequence)
+* 🔗 Dependency analysis
+* 🛡 Security considerations
+* 📊 Service availability impact
+* 🧪 Validation of technical design
+
+This step ensures that the change is **technically sound before requesting approval**.
+
+#### Example (Our Scenario)
+
+Engineers review:
+
+* Whether trunk ports between `Switch A` and `Switch B` allow `VLAN 520`
+* Whether the SVI IP address conflicts with existing networks
+* Whether routing policies must be updated
+
+If risks are identified, mitigation steps must be defined.
+
+### ✅ 3️⃣ Approval
+
+Before implementation, the change must be **authorized by designated roles**.
+
+Approvals ensure that both **technical and business perspectives** have evaluated the change.
+
+Depending on the organization's governance model, approvals may involve:
+
+* 👨‍💻 Technical Approver
+* 🏢 IT Service Owner
+* 💼 Business Owner
+* 🧑‍⚖️ Change Manager
+* 🧠 Change Advisory Board (CAB)
+
+Higher-risk changes may require **additional governance oversight**.
+
+#### Example (Our Scenario)
+
+Approvers verify that:
+
+* The **implementation plan is safe**
+* A **rollback procedure exists**
+* The change does not introduce unintended service risk
+
+Once approved, the change can proceed to planning.
+
+### 📅 4️⃣ Planning & Scheduling
+
+At this stage, the change moves from concept to **execution preparation**.
+
+The implementation plan is finalized and scheduled during an appropriate maintenance window.
+
+Planning typically includes:
+
+* 🛠 Method of Procedure (MOP)
+* 🔙 Rollback procedure
+* 🔎 Pre-change validation steps
+* 📢 Communication plan
+* 📅 Maintenance window scheduling
+
+Proper planning is critical to **minimize operational disruption**.
+
+#### Example (Our Scenario)
+
+The implementation plan may include:
+
+```
+1. Create VLAN 520 on Switch A
+2. Configure SVI with assigned IP address
+3. Verify trunk propagation to Switch B
+4. Validate routing table entries
+5. Confirm client connectivity
+```
+
+A rollback procedure may involve removing the VLAN and restoring trunk configuration.
+
+
+### 🛠 5️⃣ Implementation
+
+The approved change is executed according to the documented implementation plan.
+
+Execution must follow the defined sequence of steps to maintain operational control.
+
+Activities during this stage may include:
+
+* 🔧 Configuration deployment
+* 🧪 Live validation testing
+* 📊 Monitoring system behavior
+* 📣 Communication with stakeholders
+
+#### Example (Our Scenario)
+
+The implementation engineer performs:
+
+* Creation of `VLAN 520`
+* SVI configuration on `Switch A`
+* Trunk updates on `Switch B`
+* Connectivity validation between network segments
+
+If unexpected issues occur, the **rollback procedure is executed**.
+
+
+### 🔎 6️⃣ Review & Validation
+
+After implementation, the change must be **validated to confirm successful execution**.
+
+This stage verifies that:
+
+* 🎯 The intended objective was achieved
+* ⚠️ No unintended side effects occurred
+* 📊 Services remain stable
+* 👥 Users can access the intended functionality
+
+This stage often includes a **Post Implementation Review (PIR)**.
+
+#### Example (Our Scenario)
+
+Engineers verify:
+
+* Clients receive IP addresses in `VLAN 520`
+* Routing works correctly between network segments
+* No unexpected trunk or spanning-tree behavior occurs
+
+Monitoring may continue for a defined observation period.
+
+
+
+### 📦 7️⃣ Closure
+
+Once validation is complete, the change record is formally **closed**.
+
+Closure ensures that documentation accurately reflects the implemented state.
+
+Typical closure tasks include:
+
+* 📝 Updating the change record
+* 🧠 Recording lessons learned
+* 📦 Updating Configuration Management Database (CMDB)
+* 📊 Finalizing change metrics
+
+If the change failed or caused incidents, a **Root Cause Analysis (RCA)** may be required.
+
+#### Example (Our Scenario)
+
+The final record confirms that:
+
+* `VLAN 520` exists on `Switch A` and `Switch B`
+* The SVI routing configuration is active
+* The new service network is operational
+
+The change is then marked **Completed and Successful**.
+
+
+
+## ⚠️ Relationship Between Lifecycle and Change Types
+
+Not all changes follow the lifecycle with the same level of rigor.
+
+### 🟢 Standard Changes
+
+* Pre-approved
+* Follow a **simplified lifecycle**
+* Minimal risk assessment required
+
+Example:
+
+Adding a pre-approved VLAN tag to an access interface.
+
+### 🚦 Normal Changes
+
+* Follow the **full lifecycle**
+* Require risk assessment and approval
+
+Example:
+
+Creating `VLAN 520` with an SVI and updating trunk configurations.
+
+### ⚠️ Emergency Changes
+
+* Accelerated process
+* Implemented to resolve critical incidents
+* Review often occurs **after implementation**
+
+Example:
+
+Rolling back a routing configuration to restore network connectivity during an outage.
+
+### ⏱️ Expedited Changes
+
+* Time-sensitive but not tied to a live outage
+* Use a **fast-tracked approval process**
+
+Example:
+
+Deploying a configuration update to mitigate a newly discovered vulnerability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
