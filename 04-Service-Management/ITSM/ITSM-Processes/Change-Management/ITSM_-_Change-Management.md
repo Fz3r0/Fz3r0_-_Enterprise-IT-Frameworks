@@ -424,6 +424,8 @@ A well-defined lifecycle provides:
 
 The lifecycle transforms **individual technical actions into an organized operational process**. The Change Lifecycle exists to **balance innovation with operational stability**.
 
+<img width="908" height="354" alt="image" src="https://github.com/user-attachments/assets/f15e8352-7733-4e84-87e3-81a0cb3f459e" />
+
 Without structured control:
 
 * Configuration errors propagate quickly
