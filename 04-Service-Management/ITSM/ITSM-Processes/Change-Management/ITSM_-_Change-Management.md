@@ -416,6 +416,20 @@ Higher combined scores require increased oversight and potentially additional ap
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 🟦 Normal Change
 
 A **Normal Change** is any change that is not classified as Standard, Emergency, or Expedited.
@@ -484,8 +498,9 @@ Production changes usually require CAB visibility. Changes affecting non-product
 
 # 📚🗂️🎥 Resources
 
-- 
-
+- https://medium.com/@techtalkwithbill/change-management-in-servicenow-71d8eec96e11
+- https://www.linkedin.com/posts/jitendra-kumar-gupta-80419b2b8_itsm-changemanagement-itil-activity-7392962472879689728-ScpB/
+- https://infraon.io/blog/it-change-management-process-and-best-practices/#:~:text=Emergency%20changes%20address%20urgent%20issues,preserve%20accountability%20and%20audit%20readiness.
 
 
   
