@@ -5,7 +5,7 @@
 ## 📌 Disclaimer
 
 This repository is educational and framework-based in nature.
-It does not represent any specific organization or internal documentation.
+It does not represent any specific organization.
 
 ## 🌍 What Are Enterprise IT Frameworks?
 
