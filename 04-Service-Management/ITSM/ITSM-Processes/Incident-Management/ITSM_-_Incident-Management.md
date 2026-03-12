@@ -94,6 +94,54 @@ Incident Management supports broader ITSM objectives across several operational 
 
 
 
+
+## 👥 Incident Management Roles
+
+Incident Management involves several roles that collaborate to **detect, triage, resolve, and communicate incidents** affecting IT services.
+
+Each role participates at different stages of the incident lifecycle, from **initial reporting and triage** to **technical resolution and executive communication** during major incidents.
+
+The goal of these roles is to ensure that incidents are:
+
+* 🚨 **Detected quickly**
+* ⚡ **Resolved as fast as possible**
+* 📣 **Communicated clearly to stakeholders**
+* 📚 **Documented for future learning and improvement**
+
+| Role                             | Responsibility                                                                                                                               | Example                                                                              |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 👤 **Requester (Caller)**        | Person who reports the incident and provides details about the issue to the Help Desk.                                                       | A user reports they cannot connect to Wi-Fi or access an internal application.       |
+| 🛎 **Help Desk / Service Desk**  | Receives the incident, performs **initial triage**, determines severity, and assigns the ticket to the appropriate support team.             | Service Desk creates `INC0012345` and assigns it to the Network team.                |
+| 🧑‍💼 **Service Leader**         | Responsible for the **overall lifecycle and governance of a service**, including communication with leadership when disruptions occur.       | Service Leader informs management about a major outage affecting production systems. |
+| 📊 **Service Owner**             | Accountable for **incident progress, prioritization, and SLA compliance** for the service. Helps remove blockers to restore service quickly. | Service Owner ensures the issue is escalated properly and resolved within SLA.       |
+| 🏗 **Shared Services**           | Technical teams that **own the infrastructure or underlying platforms** supporting business services.                                        | Database, Network, or Infrastructure teams resolving backend issues.                 |
+| 📣 **Communication Lead**        | Responsible for **incident communication during Major Incidents**, ensuring stakeholders receive timely updates.                             | Sends status updates to users and leadership during a large outage.                  |
+| 🧠 **Technical Lead**            | Coordinates technical teams to **identify root cause and restore service** during complex or major incidents.                                | Leads troubleshooting across Network, Server, and Application teams.                 |
+| 🏢 **IT Leadership Team (ITLT)** | Senior IT leadership responsible for **strategic oversight and escalation decisions** during major incidents.                                | IT leadership decides escalation level or business communication strategy.           |
+
+During **Normal Incidents**:
+
+- Requester → Help Desk → Resolver Team
+
+During **Major Incidents**, additional coordination roles appear:
+
+- Technical Lead
+- Communication Lead
+- Service Owner
+- IT Leadership
+
+This structure ensures incidents are **resolved quickly while maintaining clear communication and operational control**.
+
+
+
+
+
+
+
+
+
+
+
 # 📚🗂️🎥 Resources
 
 - 
