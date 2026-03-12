@@ -102,16 +102,25 @@ With ITSM:
 * Metrics drive improvement
 * IT becomes predictable and auditable
 
+Long-Term Perspective:
 
-## 🚀 Long-Term Perspective
+- IT Service Management (ITSM) is not only about operations. It connects:
+- Strategy → Governance → Process → Execution → Continuous Improvement
+- It provides the structural foundation for scalable enterprise Information Technology (IT) operations.
 
-IT Service Management (ITSM) is not only about operations.
 
-It connects:
+## 🧰 Common ITSM Platforms
 
-Strategy → Governance → Process → Execution → Continuous Improvement
+Several enterprise platforms support IT Service Management processes. Each platform implements ITSM practices using its own workflow engine, automation capabilities, and user interface.
 
-It provides the structural foundation for scalable enterprise Information Technology (IT) operations.
+| Platform                             | Description                                                                                       | Typical Use                                             |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| ☁️ **ServiceNow**                    | Enterprise cloud ITSM platform with strong workflow automation and CMDB capabilities.             | Large enterprises and global IT environments            |
+| 🟦 **Jira Service Management**       | Atlassian ITSM platform tightly integrated with Jira, Confluence, and DevOps workflows.           | DevOps-driven organizations and software teams          |
+| 🟨 **BMC Helix / Remedy**            | Long-standing enterprise ITSM platform focused on governance, automation, and deep customization. | Large regulated enterprise environments                 |
+| 🟩 **ManageEngine ServiceDesk Plus** | Structured ITSM platform with simpler deployment and integrated asset management.                 | Small and mid-size organizations                        |
+| 🟧 **Freshservice**                  | Modern cloud ITSM platform emphasizing usability, automation, and fast deployment.                | Teams seeking lightweight ITSM solutions                |
+| 🟪 **Ivanti Neurons (Cherwell)**     | Flexible enterprise ITSM platform with strong workflow customization and service automation.      | Organizations requiring customizable service management |
 
 
 
@@ -159,5 +168,6 @@ It provides the structural foundation for scalable enterprise Information Techno
 > _- Hecho en México - by [Fz3r0 💀](https://github.com/Fz3r0/)_  
 >
 > _"In the mist of the night you could see me come, where shadows move and Demons lie..."_ 
+
 
 
