@@ -323,6 +323,195 @@ These timeframes ensure that **critical incidents receive immediate attention**,
 
 
 
+
+
+
+
+
+# 🔧 Incident Management Process Workflow
+
+The **Incident Management workflow** defines the activities required to identify, prioritize, resolve, and close incidents affecting IT services.
+
+This process typically includes two main stages:
+
+| 🧭 Phase          | 📖 Purpose                                |
+| ----------------- | ----------------------------------------- |
+| 🔎 **Triage**     | Evaluate the issue and determine priority |
+| 🛠 **Resolution** | Investigate and restore the service       |
+
+The objective is to **restore normal service as quickly as possible while documenting the incident properly**.
+
+
+
+# 🚨 High-Level Incident Process
+
+| 🔢 Step | ⚙️ Activity                | 📖 Description                                    |
+| ------- | -------------------------- | ------------------------------------------------- |
+| 1️⃣     | 📩 Incident Reported       | Issue is reported by a user or monitoring system  |
+| 2️⃣     | 🔎 Priority Determined     | Impact and urgency are evaluated                  |
+| 3️⃣     | 🎫 Incident Ticket Created | Ticket is logged and assigned to a resolver group |
+| 4️⃣     | 🛠 Investigation & Fix     | Technical team analyzes and resolves the issue    |
+| 5️⃣     | ✅ Resolution & Closure     | Service is restored and the ticket is closed      |
+
+
+
+# 🔎 Triage Sub-Process
+
+The **triage stage** focuses on understanding the incident and assigning the correct priority.
+
+| 🔢 Step | ⚙️ Activity                              |
+| ------- | ---------------------------------------- |
+| 1️⃣     | Receive incident                         |
+| 2️⃣     | Assess impact and urgency                |
+| 3️⃣     | Confirm or adjust priority               |
+| 4️⃣     | Determine if it is a Major Incident      |
+| 5️⃣     | Route ticket to the correct support team |
+
+
+
+# 🛠 Resolution Sub-Process
+
+After triage, the technical team works on restoring the service.
+
+| 🔢 Step | ⚙️ Activity                       |
+| ------- | --------------------------------- |
+| 1️⃣     | Investigate the issue             |
+| 2️⃣     | Implement a fix or workaround     |
+| 3️⃣     | Validate that service is restored |
+| 4️⃣     | Document the resolution           |
+| 5️⃣     | Close the incident ticket         |
+
+
+
+# 👥 Common Roles in Incident Management
+
+| 👤 Role                                    | ⚙️ Responsibility                        |
+| ------------------------------------------ | ---------------------------------------- |
+| 🧑‍💻 **User / Requester**                 | Reports the incident                     |
+| 🛎 **Service Desk**                        | Logs the incident and performs triage    |
+| 🧑‍🔧 **Technical Support Team**           | Investigates and resolves the issue      |
+| 👨‍💼 **Service Owner / Incident Manager** | Ensures the process and SLA are followed |
+
+
+
+# 📊 RACI Responsibility Model
+
+RACI is often used to define responsibilities during the process.
+
+| Letter   | Meaning     | Description                           |
+| -------- | ----------- | ------------------------------------- |
+| 🟥 **R** | Responsible | Performs the work                     |
+| 🟧 **A** | Accountable | Ultimately accountable for completion |
+| 🟨 **C** | Consulted   | Provides input or expertise           |
+| 🟩 **I** | Informed    | Receives status updates               |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 🚨 Major Incident Management
+
+A **Major Incident** is a high-impact event that significantly disrupts business services and requires **immediate coordinated response**.
+
+Major incidents typically correspond to **PR1 priority** and require faster response, structured communication, and coordinated troubleshooting.
+
+The objective is to:
+
+* ⚡ restore critical services as quickly as possible
+* 📢 communicate status updates to stakeholders
+* 🧠 document the event for future analysis
+
+
+
+# 🔴 Major Incident Workflow
+
+| 🔢 Step | ⚙️ Activity                | 📖 Description                                 |
+| ------- | -------------------------- | ---------------------------------------------- |
+| 1️⃣     | 🚨 Incident Identified     | A critical issue is detected or reported       |
+| 2️⃣     | 🎫 Major Incident Declared | Incident is escalated to Major Incident status |
+| 3️⃣     | 🧑‍💻 War Room Initiated   | Technical teams are assembled to investigate   |
+| 4️⃣     | 🛠 Restoration Activities  | Teams work to restore the affected service     |
+| 5️⃣     | ✅ Resolution & Closure     | Service is restored and the incident is closed |
+
+
+
+# 🧑‍💻 War Room Coordination
+
+A **War Room** is created to coordinate investigation and communication during a major incident.
+
+| 👤 Role                   | ⚙️ Responsibility                                    |
+| ------------------------- | ---------------------------------------------------- |
+| 🛎 **Service Desk**       | Identifies the incident and triggers escalation      |
+| 🧑‍🔧 **Technical Lead**  | Coordinates troubleshooting and recovery             |
+| 📣 **Communication Lead** | Sends updates to stakeholders                        |
+| 👨‍💼 **Service Owner**   | Ensures service restoration and validates resolution |
+
+
+
+# 📢 IT Alerts
+
+Major incidents usually trigger **incident notifications** to keep stakeholders informed.
+
+| 📌 Attribute     | 📖 Description                                          |
+| ---------------- | ------------------------------------------------------- |
+| 🚨 Trigger       | Associated with a Major Incident                        |
+| 📣 Communication | Sent to technical teams and management                  |
+| ⏱ Timing         | Initial notification sent shortly after detection       |
+| 🔄 Updates       | Updated as the incident evolves                         |
+| 📝 Content       | Includes affected services, status, and current actions |
+
+
+
+# 🧠 After Resolution
+
+Once the incident is resolved, a **Root Cause Analysis (RCA)** may be performed.
+
+| ⚙️ Activity            | 📖 Purpose                               |
+| ---------------------- | ---------------------------------------- |
+| 🔎 Root Cause Analysis | Identify the underlying cause            |
+| 🧩 Problem Record      | Prevent similar incidents from occurring |
+| 📚 Documentation       | Capture lessons learned                  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 📚🗂️🎥 Resources
 
 - 
