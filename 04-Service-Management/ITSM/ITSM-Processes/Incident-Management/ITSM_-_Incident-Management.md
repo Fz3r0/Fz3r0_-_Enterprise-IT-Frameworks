@@ -142,6 +142,187 @@ This structure ensures incidents are **resolved quickly while maintaining clear 
 
 
 
+
+
+
+
+## ⚡ Priority Assessment
+
+Within **Incident Management**, priority assessment is the activity used to determine **how fast an incident must be addressed** based on its effect on the business and how urgent the situation is.
+
+The goal is to ensure incidents are:
+
+* 🚨 escalated correctly
+* ⏱ handled within the proper response targets
+* 🎯 addressed in the right order according to business impact
+
+The priority assigned to an incident is calculated using two variables:
+
+| 🔎 Factor     | 📖 Meaning                                                                        |
+| ------------- | --------------------------------------------------------------------------------- |
+| 🌍 **Impact** | Indicates how large the disruption is and how many users or services are affected |
+| ⏱ **Urgency** | Indicates how quickly the issue needs to be fixed to restore productivity         |
+
+Together, these determine the **incident priority level (PR1–PR4)**.
+
+
+### 🌍 Impact Levels
+
+Impact describes **how widespread the incident is across the organization**.
+
+| 🌍 Impact Level              | 📖 Meaning                                             |
+| ---------------------------- | ------------------------------------------------------ |
+| 🟥 **1 – Enterprise Impact** | Critical services or multiple locations are affected   |
+| 🟧 **2 – Group Impact**      | Several teams or services experience disruption        |
+| 🟨 **3 – Individual Impact** | Only one user or a single service instance is affected |
+
+Example:
+
+| 🌐 Situation                                  | 🌍 Impact     |
+| --------------------------------------------- | ------------- |
+| Core routing failure affecting multiple sites | 🟥 Enterprise |
+| VLAN outage affecting one office floor        | 🟧 Group      |
+| One switch interface down for a user          | 🟨 Individual |
+
+
+###  ⏱ Urgency Levels
+
+Urgency reflects **how quickly the situation must be resolved to avoid operational disruption**.
+
+| ⏱ Urgency Level     | 📖 Meaning                                        |
+| ------------------- | ------------------------------------------------- |
+| 🔴 **1 – Critical** | Business activity is heavily disrupted or blocked |
+| 🟠 **2 – High**     | Productivity is significantly reduced             |
+| 🟢 **3 – Low**      | Minor inconvenience with minimal impact           |
+
+Example:
+
+| 🌐 Situation                                           | ⏱ Urgency   |
+| ------------------------------------------------------ | ----------- |
+| Data center switching outage                           | 🔴 Critical |
+| Department VLAN experiencing intermittent connectivity | 🟠 High     |
+| User cannot access a network printer                   | 🟢 Low      |
+
+
+### 🚑 Priority Levels
+
+After evaluating **impact and urgency**, the incident receives a priority classification.
+
+| 🚦 Priority                  | 📖 Meaning                                             |
+| ---------------------------- | ------------------------------------------------------ |
+| 🔴 **PR1 – Major Incident**  | Severe disruption requiring immediate attention        |
+| 🟠 **PR2 – High Priority**   | Significant issue affecting multiple users or services |
+| 🟡 **PR3 – Medium Priority** | Localized issue with limited business impact           |
+| 🟢 **PR4 – Low Priority**    | Minor problem affecting a single user                  |
+
+- ⚠️ **Important** - Incidents classified as **PR1** are treated as **Major Incidents** and normally require immediate coordination between multiple teams.
+
+Example:
+
+| 🚦 Priority | 📖 Example Situation                                 |
+| ----------- | ---------------------------------------------------- |
+| 🔴 **PR1**  | Core network outage affecting multiple offices       |
+| 🟠 **PR2**  | Key application unreachable for an entire department |
+| 🟡 **PR3**  | A single team experiences degraded connectivity      |
+| 🟢 **PR4**  | One user cannot connect to a peripheral device       |
+
+### 📊 Priority Matrix
+
+Incident priority is commonly determined using a **matrix combining impact and urgency**.
+
+| 🌍 Impact ↓ / ⏱ Urgency → | 🔴 Critical | 🟠 High | 🟢 Low |
+| ------------------------- | ----------- | ------- | ------ |
+| 🟥 **Enterprise Impact**  | 🔴 PR1      | 🟠 PR2  | 🟠 PR2 |
+| 🟧 **Group Impact**       | 🟠 PR2      | 🟠 PR2  | 🟡 PR3 |
+| 🟨 **Individual Impact**  | 🟠 PR2      | 🟡 PR3  | 🟢 PR4 |
+
+This matrix helps support teams **prioritize incidents consistently across the organization**.
+
+## 🧭 Incident Triage Process
+
+Before assigning a priority level, the **Service Desk performs an initial triage** to understand the situation and gather relevant details.
+
+### 🧩 Step 1 — Identify the Scope
+
+The first step is determining **how large the issue is and what systems are involved**.
+
+Typical questions include:
+
+* ❓ What exactly is happening?
+* 🌐 Which systems or services are affected?
+* 👥 Are other users reporting the same problem?
+* 💻 Which application or network service is impacted?
+* 🌎 Is the issue visible beyond the local environment?
+
+Example:
+
+```text
+Multiple users report they cannot reach the VLAN 520 gateway.
+Switch logs show ARP requests failing.
+```
+
+### 📋 Step 2 — Collect Additional Details
+
+After understanding the scope, more information is gathered to assist the technical teams.
+
+Typical questions include:
+
+* 🔧 What troubleshooting has already been attempted?
+* 📞 Has this issue been reported before?
+* 🖼 Are there screenshots or error messages available?
+* 🌐 Which URL or service endpoint is failing?
+
+Example:
+
+```text
+Devices connected to VLAN 520 cannot ping the gateway.
+Issue confirmed from two access switches.
+```
+
+### 🧑‍💻 Step 3 — Escalate to the Appropriate Team
+
+Once triage is complete, the ticket is assigned to the **correct support group** for investigation.
+
+| 🔧 Incident Category      | 👨‍💻 Responsible Team |
+| ------------------------- | ---------------------- |
+| 🌐 Routing / VLAN issue   | Network operations     |
+| 💻 Application error      | Application support    |
+| 🔐 Authentication failure | Identity services      |
+
+Example:
+
+```text
+Incident assigned to Network Engineering to investigate VLAN gateway routing.
+```
+
+
+# ⏳ Resolution Targets (SLA)
+
+Each priority level usually has a **target timeframe for resolution**, it varies depending the enterprise, vendor, etc.
+
+| 🚦 Priority           | ⏱ Typical Resolution Target |
+| --------------------- | --------------------------- |
+| 🔴 **PR1**            | 4 - 8 hours                     |
+| 🟠 **PR2 (Major)**    | 8 - 16 hours                     |
+| 🟠 **PR2 (Standard)** | 24 - 48 hours                    |
+| 🟡 **PR3**            | 72 - 144 hours                    |
+| 🟢 **PR4**            | 5+ business days             |
+
+These timeframes ensure that **critical incidents receive immediate attention**, while lower-priority issues are handled appropriately.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 📚🗂️🎥 Resources
 
 - 
