@@ -907,6 +907,78 @@ It is to ensure that **infrastructure evolves in a controlled, traceable, and re
 
 
 
+
+
+
+
+
+## 🧩 `Change Task (CTask)` — Execution Tasks Inside a Change
+
+
+A **Change Task (`CTask`)** is a **specific execution step** created **inside a Change Request (`CHG`)**.
+
+It represents **a portion of the work** assigned to a **specific team or individual** as part of the overall change.
+
+A **Change (`CHG`)** defines the **full objective**, while **CTasks** define **who does what** to complete it.
+
+Think of it as:
+
+- Change (CHG) → The full planned change
+- CTask → Individual work assigned to teams or engineers
+  
+CTasks help:
+
+* 👥 Divide work between teams
+* 📋 Track execution progress
+* 🧾 Maintain accountability
+* 🔍 Improve visibility during implementation
+
+### 🏗 Example 
+
+Imagine a change to deploy a **new SQL Server** in a data center.
+
+The full Change is:
+
+- `CHG12345` - Deploy new SQL Server for application services
+
+This change requires **multiple teams**, so separate **CTasks** are created. Example task distribution:
+
+- `CTask00001` - Networking Team: Create new VLAN and subnet for SQL Server connectivity in Data Center Fabric. 
+- `CTask00002` - Database Team: Configure SQL Server with assigned IP address and database services
+
+Both teams execute their **own tasks**, but all tasks belong to the **same Change (CHG12345)**.
+
+### ⚙️ How `CTasks` Are Created in ServiceNow
+
+`CTasks` are created **inside an existing Change (`CHG`)**.
+
+Typical workflow:
+
+```text
+Open Change (CHG)
+        ↓
+Scroll to "Change Tasks"
+        ↓
+Click "New"
+        ↓
+Create Change Task (CTask)
+```
+
+This ensures:
+
+* 🔗 The task stays linked to the Change
+* 👥 Teams receive assigned work
+* 📊 Execution can be tracked step by step
+
+**One Change can contain multiple CTasks, especially when multiple teams are involved.**
+
+
+
+
+
+
+
+
 # 📚🗂️🎥 Resources
 
 - https://medium.com/@techtalkwithbill/change-management-in-servicenow-71d8eec96e11
